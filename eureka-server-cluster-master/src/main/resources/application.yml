@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://backup:8771/eureka/
+  instance:
+    hostname: eureka-master
+spring:
+  application:
+    name: eureka-server
+
