@@ -1,4 +1,4 @@
-package cloud.eureka.service;
+package cloud.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -11,8 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableAutoConfiguration
-@ComponentScan("cloud.eureka.controller")
 public class ServiceApplicationRun {
 
     public static void main(String[] args) {

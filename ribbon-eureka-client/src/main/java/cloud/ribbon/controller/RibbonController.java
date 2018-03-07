@@ -18,6 +18,6 @@ public class RibbonController {
 
     @RequestMapping(value = "u/{username}", method = RequestMethod.GET)
     public String user(@PathVariable("username")String username){
-        return restTemplate.getForEntity("http://localhost:8001/user/info", String.class).getBody();
+        return restTemplate.getForEntity("http://query-username:8001/user/info", String.class).getBody();
     }
 }

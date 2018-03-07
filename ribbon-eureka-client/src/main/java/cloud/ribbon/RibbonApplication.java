@@ -1,4 +1,4 @@
-package cloud.ribbon.server;
+package cloud.ribbon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,8 +14,6 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableAutoConfiguration
-@ComponentScan("cloud.ribbon")
 public class RibbonApplication {
 
     @Bean
